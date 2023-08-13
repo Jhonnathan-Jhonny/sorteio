@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header > div#img {
+    background: black url(../imagens/LOTTO\ BALLS.jpg) center center repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 150px;
+}
+
+header > menu div#sorteio {
+    display: inline;
+}
+header > menu div#sorteio > img {
+    float: left;
+    margin-left: 20px;
+    height: 50px;
+    width: 100px;
+}
+
+header > menu {
+    text-align: right;
+    background-color: #A7FA6B;
+    position: relative;
+    padding-bottom: 20px;
+    box-shadow: 0px 3px 4px #00000086;
+}
+
+header > menu > nav > ul > li {
+    padding: 10px;
+    display: inline;
+    cursor: pointer;
+}
+
+header > menu > nav > ul > li > img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px -10px 0px;
+}
