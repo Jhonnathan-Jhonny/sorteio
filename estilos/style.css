@@ -106,3 +106,32 @@ main > form > div >input#botao:hover {
 main > form > div >input#botao:not(:hover) {
     transition: transform 0.5s, border 0.3s;
 }
+
+section {
+    background-color: #e2e1e1;
+}
+
+section > div#textoInicial {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+section > div > p#corNome {
+    color: #a00101;
+    font-size: 20px;
+}
+
+section > div > p.tituloInfo {
+    padding: 20px;
+    font-size: 20px;
+}
+
+section > div > p.textoInfo {
+    padding: 0px 20px;
+    color: #525151;
+}
+
+i::before {
+    content: "\f007";
+}
