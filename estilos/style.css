@@ -70,6 +70,11 @@ main > form > div#separar {
     margin-bottom: 30px;
 }
 
+main > form > div > p {
+    min-width: 400px;
+    font-size: 30px;
+}
+
 main > form > div > p >input{
     width: 90px;
     height: 60px;
@@ -121,17 +126,24 @@ section > div > p#corNome {
     color: #a00101;
     font-size: 20px;
 }
-
-section > div > p.tituloInfo {
-    padding: 20px;
+section > div {
+    position: relative;
+}
+section > div  p.tituloInfo {
+    display: inline;
     font-size: 20px;
+    padding-left: 20px;
+    position: absolute;
 }
 
 section > div > p.textoInfo {
-    padding: 0px 20px;
+    display: block;
+    padding: 20px 20px;
     color: #525151;
 }
 
-i::before {
-    content: "\f007";
+section> div  img {
+    display: inline;
+    width: 40px;
+    height: 40px;
 }
