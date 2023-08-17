@@ -40,7 +40,7 @@ header > menu > nav > ul > li {
 header > menu > nav > ul > li > img {
     width: 30px;
     height: 30px;
-    margin: 10px 30px -10px 0px;
+    margin: 10px 100px -10px 0px;
 }
 
 main {
@@ -92,8 +92,8 @@ main > form > div > p >input:hover {
 }
 
 main > form > div >input#botao {
-    width: 300px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
     margin: 40px;
     border-radius: 8px;
     border: none;
@@ -148,4 +148,19 @@ section> div  img {
     display: inline;
     width: 40px;
     height: 40px;
+}
+
+footer {
+    padding: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #6d6df3;
+}
+
+footer a:hover {
+    color: lightgrey;
 }
