@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    overflow-x: none;
 }
 
 header > div#img {
@@ -39,7 +40,7 @@ header > menu > nav > ul > li {
 header > menu > nav > ul > li > img {
     width: 30px;
     height: 30px;
-    margin: 10px 10px -10px 0px;
+    margin: 10px 30px -10px 0px;
 }
 
 main {
@@ -91,7 +92,7 @@ main > form > div > p >input:hover {
 }
 
 main > form > div >input#botao {
-    width: 400px;
+    width: 300px;
     height: 60px;
     margin: 40px;
     border-radius: 8px;
@@ -113,7 +114,8 @@ main > form > div >input#botao:not(:hover) {
 }
 
 section {
-    background-color: #e2e1e1;
+    background-color: #e4e4e4;
+    border-top: 2px solid rgba(0, 0, 0, 0.377);
 }
 
 section > div#textoInicial {
