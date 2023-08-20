@@ -4,7 +4,7 @@
     padding: 0px;
     margin: 0px;
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
-    overflow-x: none;
+    overflow-x: hidden;
 }
 
 header > div#img {
@@ -20,7 +20,7 @@ header > menu div#sorteio > img {
     float: left;
     margin-left: 20px;
     height: 50px;
-    width: 100px;
+    width: 80px;
 }
 
 header > menu {
@@ -32,19 +32,24 @@ header > menu {
 }
 
 header > menu > nav > ul {
-    display: inline;
+    display: inline-flex;
 }
 
 header > menu > nav > ul > li {
-    padding: 10px;
-    display: inline;
+    padding: 20px 10px 0px 10px;
     cursor: pointer;
+    display: inline;
 }
 
 header > menu > nav > ul > li > img {
     width: 30px;
     height: 30px;
-    margin: 10px 10px -10px 0px;
+}
+
+header menu#itens {
+    display: block;
+    width: 60px;
+    color: black;
 }
 
 main {
@@ -75,9 +80,16 @@ main > form > div#separar {
     margin-bottom: 30px;
 }
 
+main > form > div > p#plural {
+    display: inline;
+}
+main > form > div > p#juntar {
+    display: inline;
+}
+
 main > form > div > p {
     min-width: 400px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 main > form > div > p >input{

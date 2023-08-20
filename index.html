@@ -11,10 +11,16 @@
     <header>
         <div id="img"></div>
         <menu>
-            <div id="sorteio"><img src="imagens/sorteiosTopo02.png" alt="nome soteio" onclick="plural()"></div>
+            <div id="sorteio"><img src="imagens/sorteiosTopo02.png" alt="nome soteio"></div>
             <nav>
                 <ul>
-                    <li>Contatos</li>
+                    <li onclick="abrirContatos()">Contatos
+                        <menu id="itens" style="display: none;">
+                            <a href="">Instagram</a>
+                            <a href="">GitHub</a>
+                            <a href="">Linkedin</a>
+                        </menu>
+                    </li>
                     <li>Informações</li>
                     <li><img src="imagens/dark-day-mode-icon.png" alt=""></li>
                 </ul>
@@ -25,7 +31,7 @@
         <form action="" id="centro">
             <div id="separar">
                 <label for="quantidadeNumero"></label>
-                <p>Sortear <input type="number" name="numero1" id="quantidadeNumero" value="1"> número</p>
+                <p id="juntar">Sortear <input type="number" name="numero1" id="quantidadeNumero" min="1" max="10" value="1" onchange="plural()"><p id="plural"> número</p></p>
             </div>
             <div>
                 <label for="primeiroNumero"></label>

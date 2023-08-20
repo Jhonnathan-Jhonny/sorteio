@@ -23,9 +23,22 @@ function sortear() {
     }
 }
 
-function plural(){
-    let plural = document.getElementById('sorteio')
-    if(quantidadeNumeros > 1){
-        plural.innerHTML = 'Sortear números'
+function plural() {
+    let quantidadeNumero = document.getElementById('quantidadeNumero').value;
+    let pluralElement = document.getElementById('plural');
+
+    if (quantidadeNumero > 1) {
+        pluralElement.innerHTML = ' números';
+    } else {
+        pluralElement.innerHTML = ' número';
+    }
+}
+
+function abrirContatos(){
+    if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+    }
+    else {
+        itens.style.display = 'block'
     }
 }
