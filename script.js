@@ -35,10 +35,45 @@ function plural() {
 }
 
 function abrirContatos(){
-    if (itens.style.display == 'block'){
-        itens.style.display = 'none'
+    if (redesSociais.style.display == 'block'){
+        redesSociais.style.display = 'none'
     }
     else {
-        itens.style.display = 'block'
+        redesSociais.style.display = 'block'
     }
+}
+
+function temaEscuro(){
+    let cabeca = document.getElementById('temaEscuroCabeca')
+    let corpo = document.getElementById('temaEscuroCorpo')
+    let rodaPe = document.getElementById('temaEscuroRodaPe')
+    let secao = document.getElementById('temaEscuroSecao')
+    let letras = document.getElementsByName('textoInfo')
+
+    if(cabeca.style.backgroundColor == 'white'){
+        cabeca.style.backgroundColor = '#2c2c2c'
+        cabeca.style.color = 'white'
+        corpo.style.background = 'black URL(imagens/fundoTemaEscuro.avif) center center no-repeat'
+        corpo.style.backgroundSize = 'cover'
+        corpo.style.backgroundAttachment = 'fixed'
+        corpo.style.color = 'white'
+        rodaPe.style.backgroundColor = '#2c2c2c'
+        rodaPe.style.color = 'white'
+        secao.style.backgroundColor =  '#2c2c2c'
+        secao.style.color =  'white'
+        letras.style.color = 'white'
+    }
+    else {
+        cabeca.style.backgroundColor = 'white'
+        cabeca.style.color = 'black'
+        corpo.style.background = 'black url(imagens/fundoMian.jpg) center center no-repeat'
+        corpo.style.backgroundSize = 'cover'
+        corpo.style.backgroundAttachment = 'fixed'
+        corpo.style.color = 'black'
+        rodaPe.style.backgroundColor = 'white'
+        rodaPe.style.color = 'black'
+        secao.style.backgroundColor =  '#e4e4e4'
+        secao.style.color =  'black'
+    }
+        
 }

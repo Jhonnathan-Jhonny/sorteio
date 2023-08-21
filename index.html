@@ -8,26 +8,25 @@
     <title>Sorteio</title>
 </head>
 <body>
-    <header>
+    <header >
         <div id="img"></div>
-        <menu>
+        <menu id="temaEscuroCabeca">
             <div id="sorteio"><img src="imagens/sorteiosTopo02.png" alt="nome soteio"></div>
             <nav>
                 <ul>
-                    <li onclick="abrirContatos()">Contatos
-                        <menu id="itens" style="display: none;">
-                            <a href="">Instagram</a>
-                            <a href="">GitHub</a>
-                            <a href="">Linkedin</a>
-                        </menu>
-                    </li>
+                    <li onclick="abrirContatos()">Contatos</li>
                     <li>Informações</li>
-                    <li><img src="imagens/dark-day-mode-icon.png" alt=""></li>
+                    <li onclick="temaEscuro()"><img src="imagens/dark-day-mode-icon.png" alt="Mudar tema de cor"></li>
                 </ul>
             </nav>
         </menu>
+        <menu id="redesSociais" style="display: none;">
+            <a href="https://www.instagram.com/jhonnathan_jhonny/?hl=pt-br" target="_blank">Instagram</a>
+            <a href="https://github.com/Jhonnathan-Jhonny" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/jhonnathan-jhonny-rufino-rodrigues-3994bb227/" target="_blank">Linkedin</a>
+        </menu>
     </header>
-    <main>
+    <main id="temaEscuroCorpo">
         <form action="" id="centro">
             <div id="separar">
                 <label for="quantidadeNumero"></label>
@@ -42,7 +41,7 @@
             </div>
         </form>
     </main>
-    <section>
+    <section id="temaEscuroSecao">
         <div id="textoInicial">
             <p id="corNome">Sorteio online grátis!</p>
             <p>A melhor maneira de realizar o seu sorteio!</p>
@@ -75,9 +74,8 @@
             </div>
             <p class="textoInfo">Deixe o Sorteador com a cara da sua empresa e realize um sorteio personalizado, oferecendo aos participantes uma experiência única (e sem publicidade)!</p>
         </div>
-        
     </section>
-    <footer><p>Site criando por <a href="https://www.instagram.com/jhonnathan_jhonny/?hl=pt-br" target="_blank" rel="external">Jhonnathan</a> com objetivo de estudos.</p></footer>
+    <footer id="temaEscuroRodaPe"><p>Site criando por <a href="https://www.instagram.com/jhonnathan_jhonny/?hl=pt-br" target="_blank" rel="external">Jhonnathan</a> com objetivo de estudos.</p></footer>
     <script src="script.js"></script>
 </body>
 </html>

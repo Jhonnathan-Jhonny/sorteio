@@ -23,7 +23,7 @@ header > menu div#sorteio > img {
     width: 80px;
 }
 
-header > menu {
+header > menu#temaEscuroCabeca {
     text-align: right;
     background-color: white;
     position: relative;
@@ -46,10 +46,19 @@ header > menu > nav > ul > li > img {
     height: 30px;
 }
 
-header menu#itens {
+menu#redesSociais {
+    text-align: center;
+}
+
+menu#redesSociais > a {
     display: block;
-    width: 60px;
     color: black;
+    text-decoration: none;
+}
+
+menu#redesSociais > a:hover {
+    color: #a00101;
+    text-decoration: underline;
 }
 
 main {
@@ -61,6 +70,7 @@ main {
     background-attachment: fixed;
     color: #2c2c2c;
     height: 500px;
+    border-radius: none;
 }
 
 main > form {
