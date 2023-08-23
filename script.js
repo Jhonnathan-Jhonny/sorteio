@@ -48,9 +48,8 @@ function temaEscuro(){
     let corpo = document.getElementById('temaEscuroCorpo')
     let rodaPe = document.getElementById('temaEscuroRodaPe')
     let secao = document.getElementById('temaEscuroSecao')
-    let letras = document.getElementsByName('textoInfo')
 
-    if(cabeca.style.backgroundColor == 'white'){
+    if(cabeca.style.backgroundColor === 'white'){
         cabeca.style.backgroundColor = '#2c2c2c'
         cabeca.style.color = 'white'
         corpo.style.background = 'black URL(imagens/fundoTemaEscuro.avif) center center no-repeat'
@@ -61,7 +60,6 @@ function temaEscuro(){
         rodaPe.style.color = 'white'
         secao.style.backgroundColor =  '#2c2c2c'
         secao.style.color =  'white'
-        letras.style.color = 'white'
     }
     else {
         cabeca.style.backgroundColor = 'white'
